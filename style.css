@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Outfit", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 3rem;
+}
+
+.container {
+  background-color: hsl(216, 50%, 16%);
+  max-width: 55rem;
+  border-radius: 11px;
+  box-shadow: 0 0 20px 5px hsl(211, 74%, 9%);
+  padding: 3rem;
+}
+
+.img > img {
+  max-width: 100%;
+  border-radius: 11px;
+}
+
+.img {
+  position: relative;
+}
+
+.view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.img:hover .view {
+  background-color: hsla(178, 100%, 50%, 0.397);
+  z-index: 1;
+  border-radius: 11px;
+  cursor: pointer;
+}
+
+.hero a {
+  font-size: 3rem;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  display: block;
+  margin: 2rem 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.hero a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.text {
+  font-size: 2.3rem;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.eth-box {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.7rem;
+}
+
+.eth-box img {
+  margin-right: 1rem;
+  width: 1.5rem;
+}
+
+.eth {
+  color: hsl(178, 100%, 50%);
+}
+
+.day {
+  color: hsl(215, 51%, 70%);
+}
+
+.fooder {
+  margin-top: 3rem;
+  border-top: 1px solid hsl(215, 32%, 27%);
+  padding: 2rem 0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-img img {
+  width: 5rem;
+  border-radius: 50%;
+  border: 2px solid hsl(0, 0%, 100%);
+}
+
+.name {
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.name a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.name a:hover {
+  color: hsl(178, 100%, 50%);
+}
